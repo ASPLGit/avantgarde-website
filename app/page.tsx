@@ -318,7 +318,7 @@ export default function Home() {
 
           {/* Floating Card */}
           <div className="
-      bg-white/70
+      bg-white
       backdrop-blur-xl
       sm:rounded-3xl rounded-lg
       shadow-[0_25px_60px_rgba(0,0,0,0.08)]
