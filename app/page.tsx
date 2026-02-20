@@ -102,7 +102,7 @@ export default function Home() {
             </h2>
 
             <p className="
-        sm:mt-6
+        sm:mt-6 mt-4
         text-base sm:text-lg 2xl:text-xl
         text-muted-foreground
         leading-relaxed
@@ -250,7 +250,7 @@ export default function Home() {
 
             {/* Heading */}
             <h2 className="
-        text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
+         text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
         font-bold
         text-foreground
         leading-tight tracking-tight
@@ -328,7 +328,7 @@ export default function Home() {
               {/* LEFT SIDE */}
               <div>
                 <h2 className="
-             text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
+              text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
             font-bold
             text-black
             leading-tight
@@ -433,7 +433,7 @@ export default function Home() {
 
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground">
               No-Code vs. Custom Builds
             </h2>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
@@ -548,7 +548,7 @@ export default function Home() {
 
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground">
               Meet Our Leadership
             </h2>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
@@ -558,7 +558,7 @@ export default function Home() {
           </div>
 
           {/* Team Grid */}
-          <div className="mt-24 grid lg:grid-cols-2 lg:gap-16 gap-24">
+          <div className="mt-24 sm:mt-40 grid lg:grid-cols-2 lg:gap-16 gap-24">
 
             {/* ================= Kenneth ================= */}
             <div className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
@@ -717,7 +717,7 @@ export default function Home() {
               <div className="flex flex-col justify-between">
 
                 <div>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight">
+                  <h2 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground leading-tight">
                     Get Your Free Compliance Health Check
                   </h2>
 
@@ -789,7 +789,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
 
           <div className="text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
+            <h3 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground">
               Speak Directly With Us
             </h3>
             <p className="mt-4 text-muted-foreground">
@@ -914,7 +914,7 @@ export default function Home() {
 
       {/* footer */}
 
-      <footer className="py-20 bg-black relative text-white overflow-hidden">
+      <footer className="pt-20 pb-10 bg-black relative text-white overflow-hidden">
         <img src="/images/footer-tree.svg" alt="tree img" className="absolute sm:-bottom-10 -bottom-20 sm:-right-5 -right-10 w-50 h-auto sm:opacity-50 opacity-30" />
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
@@ -955,7 +955,7 @@ export default function Home() {
               <div className="
           w-full max-w-sm
           rounded-2xl
-          bg-white/5
+          bg-white/10
           backdrop-blur-md
           border border-white/10
           p-8
