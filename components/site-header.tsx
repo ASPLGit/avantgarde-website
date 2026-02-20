@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
   { href: "#services", label: "Services" },
@@ -76,7 +77,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between sm:h-16 h-14 2xl:h-24">
 
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo-text.svg"
               alt="logo with text"
@@ -84,7 +85,7 @@ export function SiteHeader() {
               height={50}
               className="2xl:h-12 h-9 w-auto"
             />
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -125,7 +126,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-4">
 
             <a
-              href="#contact"
+              href="#healthcare"
               className="hidden sm:inline-flex px-5 py-3 2xl:py-4 rounded-full bg-black text-white text-sm 2xl:text-base font-medium hover:bg-gray-800 transition"
             >
               Free Operations Health Check

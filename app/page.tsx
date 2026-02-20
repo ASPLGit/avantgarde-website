@@ -13,6 +13,7 @@ import {
   Cog,
   Layers,
   Brain,
+  Linkedin,
 } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 
@@ -52,28 +53,37 @@ export default function Home() {
 
         </div>
 
-        <div className="w-full px-6 flex justify-center">
-          <div className="md:backdrop-blur-xl backdrop-blur-sm bg-white/10 border border-white/20 rounded-2xl shadow-xl grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 max-w-4xl w-full overflow-hidden p-4 2xl:p-6">
+        <div className="relative z-10 w-full px-6 flex justify-center 2xl:mt-10 sm:mt-5 mt-3">
 
-            <div className="text-center">
-              <h3 className="font-medium text-sm 2xl:text-lg text-white tracking-wide p-2 sm:p-4 md:pt-0">
-                Automation & Digitization Consultancy
-              </h3>
-            </div>
+          <div className="
+      max-w-4xl w-full
+      rounded-2xl
+      bg-black/10
+      backdrop-blur-xl
+      border border-white/20
+      px-6 py-6 sm:px-10 sm:py-8
+      text-center
+      shadow-2xl
+      relative
+      overflow-hidden
+    ">
 
-            <div className="text-center">
-              <h3 className="font-medium text-sm 2xl:text-lg text-white tracking-wide p-2 sm:p-4 md:pt-0">
-                Integrated Operational Solutions
-              </h3>
-            </div>
+            {/* Subtle Glow */}
+            <div className="absolute -top-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl" />
 
-            <div className="text-center">
-              <h3 className="font-medium text-sm 2xl:text-lg text-white tracking-wide p-2 sm:p-4 md:pt-0">
-                People & Technology Expertise
-              </h3>
-            </div>
+            <p className="text-white/80 text-sm sm:text-base tracking-wide">
+              Custom built automation for any Business:
+            </p>
+
+            <h3 className="mt-3 text-white text-lg sm:text-2xl 2xl:text-3xl font-semibold leading-relaxed">
+              “Show Us Your Lowest Quote. <br />
+              <span className="block mt-1 text-white font-bold">
+                We’ll Beat It. Guaranteed.”
+              </span>
+            </h3>
 
           </div>
+
         </div>
       </section>
 
@@ -233,28 +243,6 @@ export default function Home() {
 
 
       {/* Excel Pain Point Section */}
-      {/* <section className="py-16 sm:py-20 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Still Using Excel to Run Your Business?
-            </h2>
-            <p className="mt-6 text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Let us consult on transforming your processes with innovative,
-              enterprise-level solutions at small business prices, including
-              integrated billing, customer relationship, vendor, and inventory
-              management.
-            </p>
-            <div className="mt-8">
-              <Button size="lg" asChild>
-                <a href="#contact">Transform Your Business Today</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-
       <section className="relative py-20 sm:py-24 2xl:py-32 bg-muted">
 
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -315,7 +303,7 @@ export default function Home() {
       >
         {/* Background Image */}
         <div
-          className="bg-cover bg-center h-150"
+          className="bg-cover bg-center h-150 flex justify-center"
           style={{
             backgroundImage: "url('/images/cayman-islands.jpg')",
           }}
@@ -325,11 +313,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20" />
 
         {/* Content Wrapper */}
-        <div className=" absolute top-50 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-center w-full">
+        <div className=" absolute sm:top-30 top-50 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Floating Card */}
           <div className="
-      bg-white/95
+      bg-white/70
       backdrop-blur-xl
       sm:rounded-3xl rounded-lg
       shadow-[0_25px_60px_rgba(0,0,0,0.08)]
@@ -409,6 +398,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
@@ -438,7 +428,7 @@ export default function Home() {
 
 
       {/* No-Code vs Custom Builds Comparison */}
-      <section id="comparison" className="py-10 sm:pb-24 bg-muted sm:pt-60">
+      <section id="comparison" className="py-10 sm:pb-24  bg-gradient-to-b from-[#ffffff] to-muted sm:pt-40">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
           {/* Header */}
@@ -461,7 +451,7 @@ export default function Home() {
     border border-border
     bg-card
     p-8
-    shadow-md
+    shadow-sm
   ">
               <h3 className="text-xl font-semibold text-foreground text-center sm:h-14">
                 No-Code Builds
@@ -499,7 +489,7 @@ export default function Home() {
     bg-sky-100
     border border-sky-300 overflow-hidden
     p-8
-    shadow-xl
+    shadow-sm
     relative
   ">
               <div className="absolute top-0 right-0 bg-sky-500 text-white text-xs px-4 py-1 rounded-bl-xl">
@@ -553,143 +543,6 @@ export default function Home() {
 
 
       {/* Team Section */}
-      {/* <section id="team" className="py-16 sm:py-24 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              Meet Our Leadership
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Decades of combined experience in compliance, technology, and
-              financial services.
-            </p>
-          </div>
-
-          <div className="mt-16 grid lg:grid-cols-2 gap-8">
-            <Card className="border-0 shadow-lg overflow-hidden">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-32 h-40 rounded-lg overflow-hidden flex-shrink-0">
-                    <Image
-                      src="/images/kenneth-adumekwe.jpeg"
-                      alt="Kenneth Adumekwe"
-                      width={128}
-                      height={160}
-                      className="w-full h-full object-cover scale-150 object-[center_25%]"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">
-                      Kenneth Adumekwe
-                    </h3>
-                    <p className="text-secondary font-medium">
-                      Founder & CEO, Yomoken | Avantgarde Solutions Ltd
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-6 text-muted-foreground leading-relaxed space-y-4">
-                  <p>
-                    Kenneth is the visionary and innovative founder and CEO of
-                    Yomoken, pioneering reusable privacy-first ID verification
-                    using zero-knowledge proofs, decentralized identities, and
-                    blockchain to transform age and identity verification.
-                    Compliant with the UK{"'"}s Online Safety Act and Cayman
-                    regulatory requirements, his vision bridges cutting-edge
-                    tech with regulatory excellence.
-                  </p>
-                  <p>
-                    With over 20 years in executive compliance and risk
-                    management, Kenneth has led at top firms including KPMG,
-                    PricewaterhouseCoopers London, and TDG Plc London. In the
-                    Cayman Islands, he specialized in AML compliance, serving as
-                    Director of Risk Management at KPMG Cayman Islands
-                    (2008-2018), establishing frameworks, leading inspections,
-                    and acting as MLRO.
-                  </p>
-                  <p>
-                    He has since provided AML compliance services at DMS
-                    Governance, The Maples Group, and Paget-Brown Trust Company
-                    Limited. Most recently, as Head of Governance, Risk &
-                    Compliance at Hawksford Governance Services Cayman Limited
-                    where he acts as the AMLCO and MLRO.
-                  </p>
-                  <p className="text-sm">
-                    <strong>Certifications:</strong> International Compliance
-                    Diploma (Merit, 2010), AML/CA (2009), ACIS (2003), CAIA
-                    Fundamentals (2019), LLB Honours in Law & Politics - Cardiff
-                    University (1998)
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg overflow-hidden">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-32 h-40 rounded-lg overflow-hidden flex-shrink-0">
-                    <Image
-                      src="/images/hasmukh-kholakiya2.webp"
-                      alt="Hasmukh Kholakiya"
-                      width={128}
-                      height={160}
-                      className="w-full h-full object-cover scale-150 object-[center_30%]"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">
-                      Hasmukh Kholakiya
-                    </h3>
-                    <p className="text-secondary font-medium">
-                      Co-Founder, Yomoken | Founder & Owner, AplombSoft Pvt.
-                      Ltd
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-6 text-muted-foreground leading-relaxed space-y-4">
-                  <p>
-                    Hasmukh Kholakiya is the Co-Founder of Yomoken and the
-                    Founder & Owner of{" "}
-                    <Link
-                      href="https://www.aplombsoft.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-secondary font-medium hover:underline"
-                    >
-                      AplombSoft Pvt. Ltd.
-                    </Link>
-                    , headquartered in Ahmedabad, India, with 18+ years of
-                    experience in enterprise software architecture, product
-                    engineering, and technology leadership.
-                  </p>
-                  <p>
-                    He specializes in delivering mission-critical financial and
-                    hedge fund software solutions, having collaborated with
-                    reputed U.S.-based family offices and hedge fund technology
-                    vendors to design and implement secure, scalable, and
-                    high-performance platforms that meet strict compliance,
-                    security, and performance standards.
-                  </p>
-                  <p>
-                    His expertise also includes Web3 and blockchain-based
-                    solution design on the Ethereum ecosystem, enabling
-                    decentralized architectures, smart contract integrations, and
-                    blockchain-enabled financial workflows aligned with modern
-                    digital asset and fintech requirements.
-                  </p>
-                  <p>
-                    With deep expertise in the Microsoft .NET ecosystem, modern
-                    web architectures, API-driven systems, and cloud-ready
-                    platforms, Hasmukh focuses on building reliable, future-ready
-                    products to help clients achieve long-term growth,
-                    operational efficiency, and technological excellence.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
-
       <section id="team" className="py-20 sm:py-28 bg-card">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
@@ -708,7 +561,7 @@ export default function Home() {
           <div className="mt-24 grid lg:grid-cols-2 lg:gap-16 gap-24">
 
             {/* ================= Kenneth ================= */}
-            <div className="relative bg-background border border-border sm:rounded-3xl rounded-xl shadow-lg pt-20 pb-10 px-8 sm:px-10 hover:shadow-2xl transition-all duration-300">
+            <div className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
 
               {/* Image */}
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
@@ -751,12 +604,23 @@ export default function Home() {
                   University (1998)
                 </p>
               </div>
+              <div className="mt-8 pt-6 border-t border-border flex justify-center sm:justify-start">
+                <Link
+                  href="https://www.linkedin.com/in/kenneth-adumekwe-488b0717"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-blue-600 transition"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  View LinkedIn Profile
+                </Link>
+              </div>
             </div>
 
 
 
             {/* ================= Hasmukh ================= */}
-            <div className="relative bg-background border border-border sm:rounded-3xl rounded-xl shadow-lg pt-20 pb-10 px-8 sm:px-10 hover:shadow-2xl transition-all duration-300">
+            <div className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
 
               {/* Image */}
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
@@ -822,136 +686,337 @@ export default function Home() {
                   operational efficiency, and technological excellence.
                 </p>
               </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-16 sm:py-24 bg-primary text-primary-foreground"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-balance">
-                Get Your Free Compliance Health Check
-              </h2>
-              <p className="mt-4 text-lg text-primary-foreground/90 leading-relaxed">
-                Avantgarde provides a free initial health check to advise on how
-                you can improve your compliance and back office processes.
-                Contact us today to get started.
-              </p>
-
-              <div className="mt-10 space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                    <Users className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-lg">Ken Adumekwe</p>
-                    <p className="text-primary-foreground/80">
-                      Founder, Avantgarde Solutions Ltd
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/80 text-sm">Email</p>
-                    <a
-                      href="mailto:Ken@yomoken.net"
-                      className="font-semibold text-lg hover:underline"
-                    >
-                      Ken@yomoken.net
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/80 text-sm">
-                      Telephone
-                    </p>
-                    <a
-                      href="tel:+13459266408"
-                      className="font-semibold text-lg hover:underline"
-                    >
-                      +1 (345) 926-6408
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-10">
+              <div className="mt-8 pt-6 border-t border-border flex justify-center sm:justify-start">
                 <Link
-                  href="https://www.aplombsoft.com"
+                  href="https://www.linkedin.com/in/hkholakiyaaspl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-blue-600 transition"
                 >
-                  <span>Technology Partner: AplombSoft India</span>
-                  <ExternalLink className="h-4 w-4" />
+                  <Linkedin className="h-4 w-4" />
+                  View LinkedIn Profile
                 </Link>
               </div>
             </div>
 
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/cayman-islands.jpg"
-                alt="Cayman Islands - Our home base"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-primary/40" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-primary-foreground font-medium text-lg">
-                  Proudly serving the Cayman Islands business community
-                </p>
-              </div>
-            </div>
           </div>
+
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-foreground text-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <Shield className="h-6 w-6" />
-              <span className="font-semibold">Avantgarde Solutions Ltd</span>
+
+      {/* Healthcare Section */}
+      <section id="healthcare" className="py-20 sm:py-28 bg-muted">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+          <div className="sm:rounded-3xl rounded-lg bg-white shadow-[0_25px_60px_rgba(0,0,0,0.04)] p-6 sm:p-10 lg:p-14">
+
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+
+              {/* LEFT SIDE */}
+              <div className="flex flex-col justify-between">
+
+                <div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight">
+                    Get Your Free Compliance Health Check
+                  </h2>
+
+                  <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+                    Avantgarde provides a free initial health check to advise on how
+                    you can improve your compliance and back office processes.
+                    Contact us today to get started.
+                  </p>
+                </div>
+
+                {/* AplombSoft Highlight Card */}
+                <div className="mt-12 bg-muted rounded-2xl p-6 border border-border">
+
+                  <p className="text-sm text-muted-foreground uppercase tracking-wide font-medium">
+                    Technology Partner
+                  </p>
+
+                  <div className="mt-3 flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground">
+                        AplombSoft
+                      </h3>
+                      <p className="text-muted-foreground text-sm mt-1 max-w-md">
+                        Delivering enterprise-grade AI-enhanced, scalable and compliant
+                        software solutions for regulated businesses.
+                      </p>
+                    </div>
+
+                    <Link
+                      href="https://www.aplombsoft.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition"
+                    >
+                      Visit Website
+                      <ExternalLink className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* RIGHT SIDE IMAGE */}
+              <div className="relative sm:rounded-3xl rounded-lg overflow-hidden shadow-xl min-h-[350px]">
+
+                <img
+                  src="/images/cayman-islands.jpg"
+                  alt="Cayman Islands - Our home base"
+                  className="object-cover w-full h-full"
+                />
+
+                <div className="absolute inset-0 bg-black/50" />
+
+                <div className="absolute inset-0 flex items-end p-6 sm:p-10">
+                  <p className="text-white text-xl sm:text-2xl font-semibold leading-relaxed max-w-md">
+                    Proudly serving the Cayman Islands business community
+                  </p>
+                </div>
+
+              </div>
+
             </div>
-            <p className="text-background/70 text-sm">
-              &copy; {new Date().getFullYear()} Avantgarde Solutions Ltd. All
-              rights reserved.
-            </p>
-            <Link
-              href="https://www.aplombsoft.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-background/70 hover:text-background text-sm inline-flex items-center gap-1"
-            >
-              Powered by AplombSoft
-              <ExternalLink className="h-3 w-3" />
-            </Link>
           </div>
-          <div className="mt-4 pt-4 border-t border-background/20 text-center">
-            <p className="text-background/60 text-xs">
+
+        </div>
+      </section>
+      {/* Contact Section */}
+      <section id="contact" className="py-16 sm:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+
+          <div className="text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
+              Speak Directly With Us
+            </h3>
+            <p className="mt-4 text-muted-foreground">
+              Reach out to discuss your compliance and operational transformation needs.
+            </p>
+          </div>
+
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* CARD 1 */}
+            <div className="group rounded-2xl border border-border p-8 text-center shadow-sm hover:shadow-xl transition duration-300">
+
+              {/* ICON WRAPPER */}
+              <div className="relative mx-auto w-16 h-16">
+
+                {/* Rotating Border */}
+                <div className="
+        absolute inset-0 rounded-2xl
+        opacity-0 group-hover:opacity-40
+        transition-opacity duration-500
+      ">
+                  <div className="
+          absolute inset-0 rounded-2xl
+          border-2 border-black
+          animate-[spin_2s_linear_infinite]
+        " />
+                </div>
+
+                {/* Inner Box */}
+                <div className="
+        relative z-10
+        w-full h-full
+        rounded-2xl
+        bg-muted
+        flex items-center justify-center
+        group-hover:bg-black
+        transition-colors duration-300
+      ">
+                  <Users className="h-6 w-6 text-foreground group-hover:text-white transition-colors duration-300" />
+                </div>
+
+              </div>
+
+              <p className="mt-6 font-semibold text-lg text-foreground">
+                Ken Adumekwe
+              </p>
+              <p className="text-muted-foreground text-sm mt-1">
+                Founder, Avantgarde Solutions Ltd
+              </p>
+            </div>
+
+
+            {/* CARD 2 */}
+            <div className="group rounded-2xl border border-border p-8 text-center shadow-sm hover:shadow-xl transition duration-300">
+
+              <div className="relative mx-auto w-16 h-16">
+
+                <div className="
+        absolute inset-0 rounded-2xl
+        opacity-0 group-hover:opacity-40
+        transition-opacity duration-500
+      ">
+                  <div className="
+          absolute inset-0 rounded-2xl
+          border-2 border-black
+          animate-[spin_2s_linear_infinite]
+        " />
+                </div>
+
+                <div className="relative z-10 w-full h-full rounded-2xl bg-muted flex items-center justify-center group-hover:bg-black transition-colors duration-300">
+                  <Mail className="h-6 w-6 text-foreground group-hover:text-white transition-colors duration-300" />
+                </div>
+
+              </div>
+
+              <p className="mt-6 text-sm text-muted-foreground">Email</p>
+              <a
+                href="mailto:Ken@yomoken.net"
+                className="font-semibold text-lg text-foreground hover:underline"
+              >
+                Ken@yomoken.net
+              </a>
+            </div>
+
+
+            {/* CARD 3 */}
+            <div className="group rounded-2xl border border-border p-8 text-center shadow-sm hover:shadow-xl transition duration-300">
+
+              <div className="relative mx-auto w-16 h-16">
+
+                <div className="
+        absolute inset-0 rounded-2xl
+        opacity-0 group-hover:opacity-40
+        transition-opacity duration-500
+      ">
+                  <div className="
+          absolute inset-0 rounded-2xl
+          border-2 border-black
+          animate-[spin_2s_linear_infinite]
+        " />
+                </div>
+
+                <div className="relative z-10 w-full h-full rounded-2xl bg-muted flex items-center justify-center group-hover:bg-black transition-colors duration-300">
+                  <Phone className="h-6 w-6 text-foreground group-hover:text-white transition-colors duration-300" />
+                </div>
+
+              </div>
+
+              <p className="mt-6 text-sm text-muted-foreground">Telephone</p>
+              <a
+                href="tel:+13459266408"
+                className="font-semibold text-lg text-foreground hover:underline"
+              >
+                +1 (345) 926-6408
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* footer */}
+
+      <footer className="py-20 bg-black relative text-white">
+        <img src="/images/footer-tree.svg" alt="tree img" className="absolute sm:-bottom-10 -bottom-20 sm:-right-5 -right-10 w-50 h-auto sm:opacity-50 opacity-30" />
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+
+            {/* ================= LEFT COLUMN ================= */}
+            <div>
+
+              {/* Logo */}
+              <Link href="/" className="inline-flex items-center">
+                <Image
+                  src="/logo-text-white.svg"
+                  alt="logo with text"
+                  width={234}
+                  height={50}
+                  className="h-12 w-auto"
+                />
+              </Link>
+
+              {/* Quote */}
+              <div className="mt-10 max-w-md">
+                <p className="text-sm uppercase tracking-wide text-white/60 font-medium">
+                  Custom built automation for any Business
+                </p>
+
+                <p className="mt-4 text-xl sm:text-2xl font-semibold leading-relaxed">
+                  “Show Us Your Lowest Quote. <br />
+                  We’ll Beat It. Guaranteed.”
+                </p>
+              </div>
+
+            </div>
+
+
+            {/* ================= RIGHT COLUMN ================= */}
+            <div className="flex md:justify-end">
+
+              <div className="
+          w-full max-w-sm
+          rounded-2xl
+          bg-white/5
+          backdrop-blur-md
+          border border-white/10
+          p-8
+          relative
+          overflow-hidden
+          hover:bg-white/10
+          transition
+        ">
+
+                {/* Subtle Accent Glow */}
+                <div className="absolute -top-16 -right-16 w-40 h-40 bg-white/5 rounded-full blur-3xl" />
+
+                <p className="text-xs uppercase tracking-wide text-white/60 font-medium">
+                  Powered by
+                </p>
+
+                <h3 className="mt-3 text-2xl font-semibold text-white">
+                  AplombSoft
+                </h3>
+
+                <p className="mt-4 text-sm text-white/70 leading-relaxed">
+                  Enterprise-grade AI-enhanced, scalable software solutions
+                  engineered for regulated and growth-focused businesses.
+                </p>
+
+                <Link
+                  href="https://www.aplombsoft.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+              mt-6 inline-flex items-center justify-center gap-2
+              px-6 py-3
+              rounded-full
+              bg-white text-black
+              text-sm font-medium
+              hover:bg-gray-200
+              transition
+            "
+                >
+                  Visit AplombSoft
+                  <ExternalLink className="h-4 w-4" />
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-16 pt-6 border-t border-white/10 text-center">
+            <p className="text-sm text-white/60">
+              © {new Date().getFullYear()} Avantgarde Solutions Ltd. All rights reserved.
+            </p>
+
+            <p className="mt-3 text-xs text-white/40">
               Avantgarde Solutions Ltd holds a Cayman Islands Trade and Business
               Licence No. 123286
             </p>
           </div>
+
         </div>
       </footer>
     </div>
