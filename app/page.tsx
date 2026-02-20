@@ -914,7 +914,7 @@ export default function Home() {
 
       {/* footer */}
 
-      <footer className="py-20 bg-black relative text-white">
+      <footer className="py-20 bg-black relative text-white overflow-hidden">
         <img src="/images/footer-tree.svg" alt="tree img" className="absolute sm:-bottom-10 -bottom-20 sm:-right-5 -right-10 w-50 h-auto sm:opacity-50 opacity-30" />
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
