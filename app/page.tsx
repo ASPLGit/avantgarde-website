@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <section className="relative w-full pt-30 h-auto 2xl:h-screen pb-20 flex flex-col 2xl:gap-20 gap-10 items-center justify-center overflow-hidden">
+      <section className="relative w-full 2xl:pt-60 pt-30 h-auto 2xl:pb-30 pb-20 flex flex-col 2xl:gap-20 gap-10 items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/5 to-transparent" />
 
         <div className="relative z-10 text-center max-w-4xl 2xl:max-w-full px-4">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl 2xl:text-8xl font-bold leading-tight">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold leading-tight">
             SAAS Provider & <br />
             Consultancy for Business Transformation
           </h1>
