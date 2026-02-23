@@ -314,49 +314,49 @@ export default function Home() {
 
         {/* Content Wrapper */}
         <div className="flex items-center justify-center w-full">
-        <div className=" absolute sm:top-30 top-50 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className=" absolute sm:top-30 top-50 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Floating Card */}
-          <div className="
+            {/* Floating Card */}
+            <div className="
       bg-white
       backdrop-blur-xl
       sm:rounded-3xl rounded-lg
       shadow-[0_25px_60px_rgba(0,0,0,0.08)]
       p-6 sm:p-12 lg:p-16
     ">
-            <div className="grid lg:grid-cols-2 sm:gap-16 gap-8 items-start">
-              {/* LEFT SIDE */}
-              <div>
-                <h2 className="
+              <div className="grid lg:grid-cols-2 sm:gap-16 gap-8 items-start">
+                {/* LEFT SIDE */}
+                <div>
+                  <h2 className="
               text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
             font-bold
             text-black
             leading-tight
           ">
-                  What Sets Us Apart
-                </h2>
+                    What Sets Us Apart
+                  </h2>
 
-                <p className="
+                  <p className="
             sm:mt-6 mt-4
             text-base sm:text-lg
             text-gray-600
             leading-relaxed
             max-w-xl
           ">
-                  Avantgarde provides innovative consultancy covering the automation
-                  and digitization of your entire back and middle office processes,
-                  not just isolated advice. Unlike no-code platforms that offer quick
-                  but limited solutions, our partnership with AplombSoft delivers
-                  custom-built, scalable AI-enhanced systems tailored for long-term
-                  growth and compliance in complex environments such as Cayman
-                  Islands regulated businesses.
-                </p>
+                    Avantgarde provides innovative consultancy covering the automation
+                    and digitization of your entire back and middle office processes,
+                    not just isolated advice. Unlike no-code platforms that offer quick
+                    but limited solutions, our partnership with AplombSoft delivers
+                    custom-built, scalable AI-enhanced systems tailored for long-term
+                    growth and compliance in complex environments such as Cayman
+                    Islands regulated businesses.
+                  </p>
 
-                {/* CTA */}
-                <div className="mt-10">
-                  <a
-                    href="#contact"
-                    className="
+                  {/* CTA */}
+                  <div className="mt-10">
+                    <a
+                      href="#contact"
+                      className="
                 inline-flex items-center justify-center
                 px-8 py-4
                 rounded-full
@@ -366,38 +366,38 @@ export default function Home() {
                 transition-all duration-300
                 hover:bg-gray-800 hover:scale-105
               "
-                  >
-                    Transform Your Business Today
-                  </a>
+                    >
+                      Transform Your Business Today
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              {/* RIGHT SIDE CHECKLIST */}
-              <div className="2xl:space-y-8 sm:space-y-5 space-y-4 md:block hidden">
-                {[
-                  "Free initial operations and systems health check to assess your automation and digitisation needs",
-                  "Guidance on complete automation solutions for compliance",
-                  "Recommendations for process audits",
-                  "Business risk assessments consultancy",
-                  "IT consultancy services",
-                  "Innovative SAAS recommendations for compliance and operational efficiency",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-4">
-                    <div className="
+                {/* RIGHT SIDE CHECKLIST */}
+                <div className="2xl:space-y-8 sm:space-y-5 space-y-4 md:block hidden">
+                  {[
+                    "Free initial operations and systems health check to assess your automation and digitisation needs",
+                    "Guidance on complete automation solutions for compliance",
+                    "Recommendations for process audits",
+                    "Business risk assessments consultancy",
+                    "IT consultancy services",
+                    "Innovative SAAS recommendations for compliance and operational efficiency",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-4">
+                      <div className="
                 mt-1
               ">
-                      <img src="/images/check-icon.svg" alt="check icon" className="min-w-6 min-h-6 w-6 h-6" />
+                        <img src="/images/check-icon.svg" alt="check icon" className="min-w-6 min-h-6 w-6 h-6" />
+                      </div>
+
+                      <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
+                        {item}
+                      </p>
                     </div>
+                  ))}
 
-                    <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-                      {item}
-                    </p>
-                  </div>
-                ))}
-
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -460,11 +460,11 @@ export default function Home() {
               <div className="mt-10 sm:space-y-2 space-y-1">
 
                 {[
-                  "Fast: Days to weeks for basic apps.",
-                  "Low upfront, scales with add-ons.",
+                  "Rushed builds may overlook long-term architecture.",
+                  "Costs increase over time with subscription tiers and add-ons.",
                   "Limited scalability with complex data.",
                   "Locked into platform ecosystems.",
-                  "Self-managed scaling & bug fixes.",
+                  "Self managed builds requiring expert to solve bug issues",
                   "Vendor lock-in and limited APIs.",
                   "Platform-dependent security.",
                   "Best for MVPs or simple tools.",
@@ -535,7 +535,7 @@ export default function Home() {
           {/* Bottom Note */}
           <p className="mt-16 text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Custom solutions ensure your systems are bug-free, scalable, and
-            future-proof — prioritizing long-term transformation over quick fixes.
+            future-proof prioritizing long-term transformation over quick fixes.
           </p>
 
         </div>
