@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <section className="relative w-full 2xl:pt-60 pt-30 h-auto 2xl:pb-30 pb-20 flex flex-col 2xl:gap-20 gap-10 items-center justify-center overflow-hidden">
+      <section className="relative w-full 2xl:pt-70 lg:pt-40 pt-30 h-auto 2xl:pb-30 pb-20 flex flex-col 2xl:gap-20 gap-10 items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -34,50 +34,54 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/5 to-transparent" />
 
-        <div className="relative z-10 text-center max-w-4xl 2xl:max-w-full px-4">
+        <div className="relative z-10 text-center max-w-4xl 2xl:max-w-5xl px-4">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold leading-tight">
-            SAAS Provider & <br />
-            Consultancy for Business Transformation
+            From Professional Websites to Intelligent Automation
+            {/* SAAS Provider & <br />
+            Consultancy for Business Transformation */}
           </h1>
 
           <p className="mt-6 text-white text-base 2xl:text-lg max-w-2xl mx-auto">
-            Your SaaS solution partner specializing in automation and
-            digital transformation. Empowering businesses to operate
-            efficiently and scale without operational complexity.
+            Through AI-driven automation and custom SaaS development, we help organizations scale with clarity, control, and confidence.
           </p>
           <div className="mt-8">
-            <Link href='#services' className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition">
+            <Link href='#learnmore' className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition">
               Learn More
             </Link>
           </div>
 
         </div>
-
-        <div className="relative z-10 w-full px-6 flex justify-center 2xl:mt-10 sm:mt-5 mt-3">
+        <div className="relative z-10 w-full px-6 flex justify-center 2xl:mt-14 sm:mt-10 mt-8">
 
           <div className="
-      max-w-4xl w-full
-      rounded-2xl
-      bg-black/10
-      backdrop-blur-xl
-      border border-white/20
-      px-6 py-6 sm:px-10 sm:py-8
-      text-center
-      shadow-2xl
-      relative
-      overflow-hidden
-    ">
+    relative w-fit
+    rounded-2xl
+    bg-sky-950
+    border border-white/10
+    px-8 py-8 sm:px-12 sm:py-10
+    text-center
+    shadow-[0_35px_100px_-40px_rgba(0,0,0,0.8)]
+    overflow-hidden
+  ">
 
-            {/* Subtle Glow */}
-            <div className="absolute -top-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl" />
+            {/* Top Accent Line */}
+            <div className="absolute top-0 left-0 right-0 h-[3px] 
+      bg-[linear-gradient(90deg,#00D4FF,#007BFF,#00D4FF)]" />
 
-            <p className="text-white/80 text-sm sm:text-base tracking-wide">
-              Custom built automation for any Business:
+            {/* Cayman Label */}
+            <p className="text-[11px] uppercase tracking-[0.25em] text-sky-400 font-semibold">
+              Cayman Business Commitment
             </p>
 
-            <h3 className="mt-3 text-white text-lg sm:text-2xl 2xl:text-3xl font-semibold leading-relaxed">
+            {/* Supporting Text */}
+            <p className="mt-4 text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+              Fair, transparent pricing and custom-built systems designed specifically for Cayman businesses.
+            </p>
+
+            {/* Mandatory Quote */}
+            <h3 className="mt-6 text-white text-xl sm:text-2xl 2xl:text-3xl font-semibold leading-relaxed">
               “Show Us Your Lowest Quote. <br />
-              <span className="block mt-1 text-white font-bold">
+              <span className="block mt-2 font-bold">
                 We’ll Beat It. Guaranteed.”
               </span>
             </h3>
@@ -87,160 +91,222 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value Proposition */}
-      <section className="py-20 sm:py-24 2xl:py-32 bg-card">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      {/* small bio */}
+      <section className="relative bg-white py-14 sm:py-20 border-b border-slate-200">
+        <div className="container mx-auto px-6">
 
-          {/* ================= HEADER ================= */}
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="
-        text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
-        font-bold text-foreground
-        leading-tight tracking-tight
-      ">
-              Enterprise-Level Consultancy at Small Business Prices
+          {/* Heading */}
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-sm uppercase tracking-widest text-slate-500 font-medium mb-4">
+              Founder-Led Expertise
+            </p>
+
+            <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 leading-tight">
+              20+ Years of Enterprise Experience
             </h2>
 
-            <p className="
-        sm:mt-6 mt-4
-        text-base sm:text-lg 2xl:text-xl
-        text-muted-foreground
-        leading-relaxed
-      ">
-              Through our strategic partnership with{" "}
+            <p className="mt-4 text-slate-600 text-sm sm:text-base">
+              Decades of leadership across compliance, fintech, enterprise software, and scalable SaaS architecture.
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            {/* Founder 1 */}
+            <Link href="#kenneth" className="group bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 hover:shadow-xl transition duration-300">
+
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/kenneth-adumekwe.jpeg"
+                  alt="Kenneth"
+                  className="w-16 h-16 rounded-xl object-cover"
+                />
+                <div>
+                  <h3 className="font-semibold text-slate-900">
+                    Kenneth Adumekwe
+                  </h3>
+                  <p className="text-sm text-slate-500">
+                    Founder & CEO
+                  </p>
+                </div>
+              </div>
+
+              <ul className="mt-6 space-y-2 text-sm text-slate-600">
+                <li>• 20+ Years in Compliance & Risk</li>
+                <li>• Former KPMG & PwC Leadership</li>
+                <li>• AML & Regulatory Specialist</li>
+              </ul>
+
+            </Link>
+
+            {/* Founder 2 */}
+            <Link href="#hasmukh" className="group bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 hover:shadow-xl transition duration-300">
+
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/hasmukh-kholakiya2.webp"
+                  alt="Hasmukh"
+                  className="w-16 h-16 rounded-xl object-cover object-top"
+                />
+                <div>
+                  <h3 className="font-semibold text-slate-900">
+                    Hasmukh Kholakiya
+                  </h3>
+                  <p className="text-sm text-slate-500">
+                    Co-Founder & Technology Lead
+                  </p>
+                </div>
+              </div>
+
+              <ul className="mt-6 space-y-2 text-sm text-slate-600">
+                <li>• 18+ Years Enterprise Software</li>
+                <li>• .NET & Cloud Architecture Expert</li>
+                <li>• Web3 & Scalable SaaS Systems</li>
+              </ul>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition */}
+      <section id="learnmore" className="py-20 sm:py-24 bg-card">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+
+          {/* ================= INTRO ================= */}
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm uppercase tracking-widest text-slate-500 font-medium mb-4">
+              Strategic Technology Partnership
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground leading-tight">
+              Affordable, High-Impact Technology for Cayman Businesses
+            </h2>
+
+            <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+              The cost of doing business in the Cayman Islands keeps rising, and innovative tech solutions feel out of reach for many local companies and not for profit organisations.
+            </p>
+
+            <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
+              Avantgarde has partnered with{" "}
               <Link
                 href="https://www.aplombsoft.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary font-semibold hover:underline inline-flex items-center gap-1"
+                className="text-secondary font-medium hover:underline"
               >
-                AplombSoft
-                <ExternalLink className="h-4 w-4" />
+                Aplombsoft Pvt Ltd
               </Link>
-              , Avantgarde enables the delivery of bespoke AI-enhanced
-              integrated back and middle office solutions at low prices.
-              AplombSoft has a proven track record of helping international
-              companies transform their operations.
+              {" "}to change that delivering cost effective, high impact technology tailored for Cayman businesses.
             </p>
           </div>
 
-          {/* ================= BODY TEXT ================= */}
-          <div className="mt-14 max-w-4xl mx-auto space-y-6">
-            <p className="text-base sm:text-lg 2xl:text-xl text-muted-foreground leading-relaxed text-center">
-              Although no-code application builders can design your business application, you need to manage, maintain, and ensure it is built to scale. AplombSoft and Avantgarde ensure that AI is used correctly and managed so that any bugs are fixed and the initial build can be scaled, legislating for future developments.
+          {/* ================= TARGET GROUPS ================= */}
+          <div className="mt-16 grid md:grid-cols-2 gap-10">
+
+            {/* Micro Businesses */}
+            <div className="rounded-2xl border border-border bg-amber-50 p-8">
+              <h3 className="text-xl font-semibold text-foreground">
+                For Micro & Small Businesses
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-muted-foreground leading-relaxed text-base">
+                <li>• Hesitant about website development costs</li>
+                <li>
+                  • Needing to digitize and automate existing processes with customization not possible with generic paid subscription platforms
+                </li>
+              </ul>
+
+              <p className="mt-6 text-muted-foreground leading-relaxed">
+                Professional website development & hosting with affordable,
+                budget aligned technology designed specifically for growing businesses.
+              </p>
+            </div>
+
+            {/* Mature Businesses */}
+            <div className="rounded-2xl border border-border bg-amber-50 p-8">
+              <h3 className="text-xl font-semibold text-foreground">
+                For Mature & Growing Businesses
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-muted-foreground leading-relaxed text-base">
+                <li>• Custom automation solutions</li>
+                <li>• Bespoke business platform development</li>
+                <li>• AI enhanced & blockchain integration</li>
+                <li>• Regulatory compliance consultation</li>
+                <li>• Full process digitization</li>
+              </ul>
+
+              <p className="mt-6 text-muted-foreground leading-relaxed">
+                Tailored systems that streamline operations, reduce manual work,
+                and scale alongside your business.
+              </p>
+            </div>
+
+          </div>
+
+          {/* ================= BRIDGE PARAGRAPH ================= */}
+          <div className="mt-16 max-w-3xl mx-auto text-center space-y-6">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              Avantgarde builds personalised platforms just for you. Book a no obligation free consultation today.
             </p>
 
-            <p className="text-base sm:text-lg 2xl:text-xl text-muted-foreground leading-relaxed text-center">
-              Via this collaboration, Cayman companies can achieve a complete transformation of their compliance and operational processes. This streamlines administration and operations, creating more time and resources dedicated to growing your business all at low fees designed to support small businesses.
-            </p>
-
-            <p className="text-base sm:text-lg 2xl:text-xl text-muted-foreground leading-relaxed text-center">
-              Leveraging over 20 years of professional experience, Avantgarde also assists fund operators in identifying and selecting the right service providers to meet their specific needs and budget.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              We listen to your challenges and deliver scalable, budget aligned solutions that save money and free up your time to grow.
             </p>
           </div>
 
-          {/* ================= CARDS ================= */}
+          {/* ================= EXPERIENCE + CTA ================= */}
+          <div className="mt-16 max-w-3xl mx-auto text-center space-y-6">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              With <span className="font-semibold text-foreground">40+ combined years in compliance and IT</span>,
+              we're uniquely positioned to solve your pain points efficiently and affordably.
+            </p>
+
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+              Transform your operations without breaking the bank.
+            </p>
+
+            <div className="pt-6">
+              <Link
+                href="#contact"
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition"
+              >
+                Contact us for your free consultation now
+              </Link>
+            </div>
+          </div>
+
           <div className="mt-20 grid md:grid-cols-3 gap-8">
-
             {/* ================= CARD 1 ================= */}
-            <div className="
-    group relative overflow-hidden
-    rounded-3xl
-    bg-muted/40
-    p-10
-    shadow-sm
-    transition-all duration-300
-    hover:-translate-y-2 hover:shadow-2xl
-  ">
+            <div className=" group relative overflow-hidden rounded-3xl bg-sky-50 p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ">
               {/* Background Icon */}
-              <Cog className="
-      absolute -bottom-10 -right-10
-      w-40 h-40
-      text-muted-foreground/10
-      transition-transform duration-500
-      group-hover:rotate-45
-    " />
-
+              <Cog className=" absolute -bottom-10 -right-10 w-40 h-40 text-muted-foreground/10 transition-transform duration-500 group-hover:rotate-45 " />
               <div className="relative z-10 text-center">
-                <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  Automation & Digitization Consultancy
-                </h3>
-
-                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg">
-                  Expert guidance on automating and digitizing compliance workflows
-                  aligned with Cayman and international standards.
-                </p>
+                <h3 className="text-xl font-semibold text-foreground"> Automation & Digitization Consultancy </h3>
+                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg"> Expert guidance on automating and digitizing compliance workflows aligned with Cayman and international standards. </p>
               </div>
-            </div>
-
-
-            {/* ================= CARD 2 ================= */}
-            <div className="
-    group relative overflow-hidden
-    rounded-3xl
-    bg-[#FDF1FF]
-    p-10
-    shadow-sm
-    transition-all duration-300
-    hover:-translate-y-2 hover:shadow-2xl
-  ">
+            </div> {/* ================= CARD 2 ================= */}
+            <div className=" group relative overflow-hidden rounded-3xl bg-amber-50 p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ">
               {/* Background Icon */}
-              <Layers className="
-      absolute -bottom-10 -right-10
-      w-40 h-40
-      text-muted-foreground/10
-      transition-transform duration-500
-      group-hover:scale-125
-    " />
-
+              <Layers className=" absolute -bottom-10 -right-10 w-40 h-40 text-muted-foreground/10 transition-transform duration-500 group-hover:scale-125 " />
               <div className="relative z-10 text-center">
-                <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  Integrated Operational Solutions
-                </h3>
-
-                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg">
-                  Tailored recommendations that integrate and streamline
-                  your entire operational ecosystem.
-                </p>
+                <h3 className="text-xl font-semibold text-foreground"> Integrated Operational Solutions </h3>
+                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg"> Tailored recommendations that integrate and streamline your entire operational ecosystem. </p>
               </div>
-            </div>
-
-
-            {/* ================= CARD 3 ================= */}
-            <div className="
-    group relative overflow-hidden
-    rounded-3xl
-    bg-[#F6FFEF]
-    p-10
-    shadow-sm
-    transition-all duration-300
-    hover:-translate-y-2 hover:shadow-2xl
-  ">
+            </div> {/* ================= CARD 3 ================= */}
+            <div className=" group relative overflow-hidden rounded-3xl bg-[#F6FFEF] p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ">
               {/* Background Icon */}
-              <Brain className="
-      absolute -bottom-10 -right-10
-      w-40 h-40
-      text-muted-foreground/10
-      transition-all duration-500
-      group-hover:animate-pulse
-    " />
-
+              <Brain className=" absolute -bottom-10 -right-10 w-40 h-40 text-muted-foreground/10 transition-all duration-500 group-hover:animate-pulse " />
               <div className="relative z-10 text-center">
-                <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  People & Technology Expertise
-                </h3>
-
-                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg">
-                  Combining seasoned professionals with cutting-edge
-                  technology to deliver measurable impact.
-                </p>
+                <h3 className="text-xl font-semibold text-foreground"> People & Technology Expertise </h3>
+                <p className="mt-6 text-muted-foreground leading-relaxed text-base sm:text-lg"> Combining seasoned professionals with cutting-edge technology to deliver measurable impact. </p>
               </div>
             </div>
           </div>
 
         </div>
       </section>
-
 
       {/* Excel Pain Point Section */}
       <section className="relative py-20 sm:py-24 2xl:py-32 bg-muted">
@@ -274,7 +340,7 @@ export default function Home() {
             {/* CTA Link */}
             <div className="mt-10">
               <Link
-                href="#contact"
+                href="#consultation"
                 className="
             inline-flex items-center justify-center
             px-6 sm:px-8 2xl:px-10
@@ -561,7 +627,7 @@ export default function Home() {
           <div className="mt-24 sm:mt-40 grid lg:grid-cols-2 lg:gap-16 gap-24">
 
             {/* ================= Kenneth ================= */}
-            <div className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
+            <div id="kenneth" className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
 
               {/* Image */}
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
@@ -620,7 +686,7 @@ export default function Home() {
 
 
             {/* ================= Hasmukh ================= */}
-            <div className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
+            <div id="hasmukh" className="relative bg-background border border-border sm:rounded-xl rounded-md shadow-sm pt-20 pb-10 px-8 sm:px-10 transition-all duration-300">
 
               {/* Image */}
               <div className="absolute -top-16 left-1/2 -translate-x-1/2">
@@ -705,8 +771,8 @@ export default function Home() {
       </section>
 
 
-      {/* Healthcare Section */}
-      <section id="healthcare" className="py-20 sm:py-28 bg-muted">
+      {/* Consultation Section */}
+      <section id="consultation" className="py-20 sm:py-28 bg-muted">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
           <div className="sm:rounded-3xl rounded-lg bg-white shadow-[0_25px_60px_rgba(0,0,0,0.04)] p-6 sm:p-10 lg:p-14">
@@ -718,14 +784,16 @@ export default function Home() {
 
                 <div>
                   <h2 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground leading-tight">
-                    Get Your Free Compliance Health Check
+                    Start with a Free Strategy Consultation
                   </h2>
 
                   <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-                    Avantgarde provides a free initial health check to advise on how
-                    you can improve your compliance and back office processes.
-                    Contact us today to get started.
+                    We offer a no-obligation consultation to understand your business challenges
+                    and explore practical, budget-aligned technology solutions. Whether you need
+                    a professional website or custom automation for your operations, we’ll help
+                    you identify the right next step.
                   </p>
+
                 </div>
 
                 {/* AplombSoft Highlight Card */}
@@ -915,7 +983,7 @@ export default function Home() {
       {/* footer */}
 
       <footer className="pt-20 pb-10 bg-black relative text-white overflow-hidden">
-        <img src="/images/footer-tree.svg" alt="tree img" className="absolute sm:-bottom-10 -bottom-20 sm:-right-5 -right-10 w-50 h-auto sm:opacity-50 opacity-30" />
+        <img src="/images/footer-tree.svg" alt="tree img" className="absolute sm:-bottom-10 -bottom-20 sm:-right-5 -right-10 w-50 h-auto opacity-50" />
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
           <div className="grid md:grid-cols-2 gap-16 items-start">

@@ -8,7 +8,7 @@ import Link from "next/link";
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#comparison", label: "Our Edge" },
-  { href: "#team", label: "Our Team" },
+  { href: "#team", label: "Our Leadership" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -126,10 +126,10 @@ export function SiteHeader() {
           <div className="flex items-center gap-4">
 
             <a
-              href="#healthcare"
+              href="#consultation"
               className="hidden sm:inline-flex px-5 py-3 2xl:py-4 rounded-full bg-black text-white text-sm 2xl:text-base font-medium hover:bg-gray-800 transition"
             >
-              Free Operations Health Check
+              Free consultation
             </a>
 
             <button
