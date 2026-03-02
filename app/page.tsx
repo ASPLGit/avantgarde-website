@@ -25,75 +25,87 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <section className="relative w-full 2xl:pt-70 lg:pt-40 pt-30 h-auto 2xl:pb-30 pb-20 flex flex-col 2xl:gap-20 gap-10 items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/images/hero-section-background.webp')",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/5 to-transparent" />
+      <section className="relative w-full 2xl:py-70 lg:py-50 pt-30 pb-20 overflow-hidden">
+        <div className="container-custom">
+          {/* Background */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/hero-section-background.webp')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
-        <div className="relative z-10 text-center max-w-4xl 2xl:max-w-5xl px-4">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold leading-tight">
-            From Professional Websites to Intelligent Automation
-            {/* SAAS Provider & <br />
-            Consultancy for Business Transformation */}
-          </h1>
+          <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
 
-          <p className="mt-6 text-white text-base 2xl:text-lg max-w-2xl mx-auto">
-            Through AI-driven automation and custom SaaS development, we help organizations scale with clarity, control, and confidence.
-          </p>
-          <div className="mt-8">
-            <Link href='#learnmore' className="px-6 py-3 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition">
-              Learn More
-            </Link>
+            {/* ================= LEFT SIDE ================= */}
+            <div className="text-left">
+
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold leading-tight">
+                From Professional Websites to Intelligent Automation
+              </h1>
+
+              <p className="mt-6 text-white/90 text-base 2xl:text-lg max-w-xl leading-relaxed">
+                Through AI-driven automation and custom SaaS development, we help
+                organizations scale with clarity, control, and confidence.
+              </p>
+
+              <div className="mt-8">
+                <Link
+                  href="#learnmore"
+                  className="inline-flex items-center px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-gray-200 transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+
+            </div>
+
+            {/* ================= RIGHT SIDE CARD ================= */}
+            <div className="flex justify-center lg:justify-end">
+
+              <div className="
+        relative max-w-md w-full
+        rounded-2xl
+        bg-sky-950
+        border border-white/10
+        px-8 py-8
+        shadow-[0_40px_120px_-40px_rgba(0,0,0,0.9)]
+        overflow-hidden group
+      ">
+
+                {/* Accent Line */}
+                <div className="absolute top-0 left-0 h-[3px] w-0 
+  bg-[linear-gradient(90deg,#00D4FF,#007BFF,#00D4FF)]
+  transition-all duration-500 ease-out
+  group-hover:w-full" />
+
+                {/* Cayman Label */}
+                <p className="text-[11px] uppercase tracking-[0.25em] text-sky-400 font-semibold">
+                  Cayman Business Commitment
+                </p>
+
+                {/* Supporting Text */}
+                <p className="mt-4 text-slate-300 text-sm leading-relaxed">
+                  Fair, transparent pricing and custom-built systems designed specifically
+                  for Cayman businesses.
+                </p>
+
+                {/* Mandatory Quote */}
+                <h3 className="mt-6 text-white text-lg sm:text-xl font-semibold leading-relaxed">
+                  “Show Us Your Lowest Quote.
+                  <span className="block mt-2 font-bold">
+                    We’ll Beat It. Guaranteed.”
+                  </span>
+                </h3>
+
+              </div>
+            </div>
           </div>
-
-        </div>
-        <div className="relative z-10 w-full px-6 flex justify-center 2xl:mt-14 sm:mt-10 mt-8">
-
-          <div className="
-    relative w-fit
-    rounded-2xl
-    bg-sky-950
-    border border-white/10
-    px-8 py-8 sm:px-12 sm:py-10
-    text-center
-    shadow-[0_35px_100px_-40px_rgba(0,0,0,0.8)]
-    overflow-hidden
-  ">
-
-            {/* Top Accent Line */}
-            <div className="absolute top-0 left-0 right-0 h-[3px] 
-      bg-[linear-gradient(90deg,#00D4FF,#007BFF,#00D4FF)]" />
-
-            {/* Cayman Label */}
-            <p className="text-[11px] uppercase tracking-[0.25em] text-sky-400 font-semibold">
-              Cayman Business Commitment
-            </p>
-
-            {/* Supporting Text */}
-            <p className="mt-4 text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Fair, transparent pricing and custom-built systems designed specifically for Cayman businesses.
-            </p>
-
-            {/* Mandatory Quote */}
-            <h3 className="mt-6 text-white text-xl sm:text-2xl 2xl:text-3xl font-semibold leading-relaxed">
-              “Show Us Your Lowest Quote. <br />
-              <span className="block mt-2 font-bold">
-                We’ll Beat It. Guaranteed.”
-              </span>
-            </h3>
-
-          </div>
-
         </div>
       </section>
 
       {/* small bio */}
       <section className="relative bg-white py-14 sm:py-20 border-b border-slate-200">
-        <div className="container mx-auto px-6">
+        <div className="container-custom">
 
           {/* Heading */}
           <div className="text-center max-w-3xl mx-auto">
@@ -172,7 +184,7 @@ export default function Home() {
 
       {/* Value Proposition */}
       <section id="learnmore" className="py-20 sm:py-24 bg-card">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="container-custom">
 
           {/* ================= INTRO ================= */}
           <div className="max-w-3xl mx-auto text-center">
@@ -310,38 +322,38 @@ export default function Home() {
 
       {/* Excel Pain Point Section */}
       <section className="relative py-20 sm:py-24 2xl:py-32 bg-muted">
+        <div className="container-custom">
+          <div className="relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-
-            {/* Heading */}
-            <h2 className="
+              {/* Heading */}
+              <h2 className="
          text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl
         font-bold
         text-foreground
         leading-tight tracking-tight
       ">
-              Still Using Excel to Run Your Business?
-            </h2>
+                Still Using Excel to Run Your Business?
+              </h2>
 
-            {/* Description */}
-            <p className="
+              {/* Description */}
+              <p className="
         mt-6
         text-base sm:text-lg md:text-xl 2xl:text-2xl
         text-muted-foreground
         leading-relaxed
       ">
-              Let us consult on transforming your processes with innovative,
-              enterprise-level solutions at small business prices including
-              integrated billing, customer relationship management, vendor,
-              and inventory systems.
-            </p>
+                Let us consult on transforming your processes with innovative,
+                enterprise-level solutions at small business prices including
+                integrated billing, customer relationship management, vendor,
+                and inventory systems.
+              </p>
 
-            {/* CTA Link */}
-            <div className="mt-10">
-              <Link
-                href="#consultation"
-                className="
+              {/* CTA Link */}
+              <div className="mt-10">
+                <Link
+                  href="#consultation"
+                  className="
             inline-flex items-center justify-center
             px-6 sm:px-8 2xl:px-10
             py-3 sm:py-4
@@ -352,13 +364,14 @@ export default function Home() {
             transition-all duration-300
             hover:bg-gray-800 hover:scale-105
           "
-              >
-                Transform Your Business Today
-              </Link>
-            </div>
+                >
+                  Transform Your Business Today
+                </Link>
+              </div>
 
+            </div>
           </div>
-        </div>
+          </div>
       </section>
 
 
@@ -495,7 +508,7 @@ export default function Home() {
 
       {/* No-Code vs Custom Builds Comparison */}
       <section id="comparison" className="py-10 sm:pb-24  bg-gradient-to-b from-[#ffffff] to-muted sm:pt-40">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="container-custom">
 
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto">
@@ -610,7 +623,7 @@ export default function Home() {
 
       {/* Team Section */}
       <section id="team" className="py-20 sm:py-28 bg-card">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="container-custom">
 
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto">
@@ -773,7 +786,7 @@ export default function Home() {
 
       {/* Consultation Section */}
       <section id="consultation" className="py-20 sm:py-28 bg-muted">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="container-custom">
 
           <div className="sm:rounded-3xl rounded-lg bg-white shadow-[0_25px_60px_rgba(0,0,0,0.04)] p-6 sm:p-10 lg:p-14">
 
@@ -854,7 +867,7 @@ export default function Home() {
       </section>
       {/* Contact Section */}
       <section id="contact" className="py-16 sm:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="container-custom">
 
           <div className="text-center max-w-2xl mx-auto">
             <h3 className=" text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-foreground">
