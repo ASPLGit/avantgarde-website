@@ -14,6 +14,7 @@ import {
   Layers,
   Brain,
   Linkedin,
+  ArrowUpRight,
 } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 
@@ -149,7 +150,15 @@ export default function Home() {
                 <li>• Former KPMG & PwC Leadership</li>
                 <li>• AML & Regulatory Specialist</li>
               </ul>
+              <div className="mt-6 flex items-center gap-2 justify-end">
+                <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
+                  View Full Profile
+                </span>
 
+                <ArrowUpRight
+                  className="w-4 h-4 text-slate-500 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+              </div>
             </Link>
 
             {/* Founder 2 */}
@@ -176,6 +185,15 @@ export default function Home() {
                 <li>• .NET & Cloud Architecture Expert</li>
                 <li>• Web3 & Scalable SaaS Systems</li>
               </ul>
+              <div className="mt-6 flex items-center gap-2 justify-end">
+                <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
+                  View Full Profile
+                </span>
+
+                <ArrowUpRight
+                  className="w-4 h-4 text-slate-500 transition-all duration-300 group-hover:text-slate-900 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+              </div>
             </Link>
 
           </div>
@@ -371,7 +389,7 @@ export default function Home() {
 
             </div>
           </div>
-          </div>
+        </div>
       </section>
 
 
